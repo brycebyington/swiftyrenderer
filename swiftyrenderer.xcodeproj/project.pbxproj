@@ -28,6 +28,11 @@
 			path = swiftyrenderer;
 			sourceTree = "<group>";
 		};
+		022BD3352DB1784800CD0B09 /* output */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = output;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 		022BD3182DB1738F00CD0B09 = {
 			isa = PBXGroup;
 			children = (
+				022BD3352DB1784800CD0B09 /* output */,
 				022BD3232DB1738F00CD0B09 /* swiftyrenderer */,
 				022BD3222DB1738F00CD0B09 /* Products */,
 			);
@@ -74,6 +80,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				022BD3232DB1738F00CD0B09 /* swiftyrenderer */,
+				022BD3352DB1784800CD0B09 /* output */,
 			);
 			name = swiftyrenderer;
 			packageProductDependencies = (
@@ -94,6 +101,7 @@
 				TargetAttributes = {
 					022BD3202DB1738F00CD0B09 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -187,6 +195,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SYMROOT = build;
 			};
 			name = Debug;
 		};
@@ -242,16 +251,22 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = build;
 			};
 			name = Release;
 		};
 		022BD3292DB1738F00CD0B09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Q2F2QHUWY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/swiftyrenderer/Modules\"";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -259,10 +274,14 @@
 		022BD32A2DB1738F00CD0B09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Q2F2QHUWY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/swiftyrenderer/Modules\"";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

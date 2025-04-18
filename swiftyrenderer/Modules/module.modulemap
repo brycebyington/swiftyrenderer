@@ -1,0 +1,4 @@
+module tgaimage {
+    header "tgaimage.h"
+    export *
+}
