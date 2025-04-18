@@ -1,4 +1,4 @@
-# swiftyrenderer: a software renderer built on top of tinyrenderer's tgaimage
+# swiftyrenderer: a software renderer written in swift built on top of tinyrenderer's tgaimage
 
 # please see [ssloy/tinyrenderer](https://github.com/ssloy/tinyrenderer/) for the original source code
 
